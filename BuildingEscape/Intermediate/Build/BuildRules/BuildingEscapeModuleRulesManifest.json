@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\shuss\\OneDrive\\Desktop\\UnrealEngineDev\\building-escape\\BuildingEscape\\Source\\BuildingEscape\\BuildingEscape.Build.cs",
+		"C:\\Users\\shuss\\OneDrive\\Desktop\\UnrealEngineDev\\building-escape\\BuildingEscape\\Source\\BuildingEscape.Target.cs",
+		"C:\\Users\\shuss\\OneDrive\\Desktop\\UnrealEngineDev\\building-escape\\BuildingEscape\\Source\\BuildingEscapeEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
