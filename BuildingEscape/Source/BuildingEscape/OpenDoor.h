@@ -25,7 +25,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	
 	void OpenDoor(float DeltaTime);
-
+	void CloseDoor(float DeltaTime);
 private: 
 	float InitialYaw;
 	float TargetYaw;
@@ -42,6 +42,15 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	AActor* ActorTriggeringOpenDoor;
+	
+	UPROPERTY(EditAnywhere)
+	float OpenLerpAlpha = 1.f; // higher value -> faster closing
+	
+	UPROPERTY(EditAnywhere)
+	float CloseLerpAlpha = 2.f; 
+	// track time
+	float DoorOpenedTime = 0.f;
 
-	float Alpha = 1.f;
+	UPROPERTY(EditAnywhere)
+	float CloseDoorLatency = 2.f; // time before door starts to close once pawn has left the TriggerVolume
 };
