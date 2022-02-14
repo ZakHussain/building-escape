@@ -82,7 +82,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	UE_LOG(LogTemp, Warning, TEXT("The DT is %f and the CTD is %f"), DoorOpenedTime, CloseDoorLatency);
+	//UE_LOG(LogTemp, Warning, TEXT("The DT is %f and the CTD is %f"), DoorOpenedTime, CloseDoorLatency);
 	// How do we protect against dereferencing a null pointer?
 	if (PressurePlate && PressurePlate->IsOverlappingActor(ActorTriggeringOpenDoor))
 	{
